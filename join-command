@@ -1,0 +1,1 @@
+kubeadm join 10.148.0.31:6443 --token pspdt5.6w6j33nzm36iasg4 --discovery-token-ca-cert-hash sha256:689e5d88955bd9177073f1c632a3b42e2f5f30d9b90d670645309ca55928f60b 
