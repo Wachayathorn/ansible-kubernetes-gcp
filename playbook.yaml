@@ -127,6 +127,7 @@
         src: /home/wachayathorn.singsena/.kube/config
         dest: config
         flat: yes
+
 # Have the worker nodes joined cluster
 - hosts: worker
   become: true
@@ -135,6 +136,6 @@
       # copy: src=join-command dest=/tmp/join-command.sh mode=0777
       copy:
         src: "join-command"
-        dest:  "/tmp/join-command.sh"
+        dest: "/tmp/join-command.sh"
     - name: Join the node to cluster
       command: sh /tmp/join-command.sh
